@@ -52,7 +52,7 @@ $config = [
             'enablePrettyUrl' => true,
             'showScriptName' => false,
             'rules' => [
-              'category/<id>' => 'category/view',
+              'category/view/<id>' => 'category/view',
             ],
         ],
 

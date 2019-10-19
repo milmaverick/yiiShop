@@ -114,6 +114,9 @@ a.desc:after {
 .nav > li > form > button.logout:focus {
     outline: none;
 }
+.nav > li:first-child{
+  margin-top: 8px;
+}
 
 .nav-menu{
   display: flex;

@@ -19,13 +19,13 @@ class CategoryController extends Controller
     return $this->render('index', compact('goods'));
   }
 
-  public function actionMore($id)
-  {
-    // code...
-    $good = new Good();
-    $good= $good->getOneGood($id);
-    return $this->render('more',compact('good'));
-  }
+  // public function actionMore($id)
+  // {
+  //   // code...
+  //   $good = new Good();
+  //   $good= $good->getOneGood($id);
+  //   return $this->render('more',compact('good'));
+  // }
 
   public function actionView($id)
   {

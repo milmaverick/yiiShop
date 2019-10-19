@@ -26,7 +26,7 @@ use yii\helpers\Html;
   						</div>
   						<div class="product-button">
   							  <p><a class="btn btn-md btn-success" href="#">заказать</a></p>
-  							 <p><a class="btn btn-md btn-primary" href="<?=Url::to(['category/more/','id'=>$good['id']])?>">подробнее</a></p>
+  							 <p><a class="btn btn-md btn-primary" href="<?=Url::to(['good/index/','id'=>$good['id']])?>">подробнее</a></p>
   						</div>
             </div>
 
