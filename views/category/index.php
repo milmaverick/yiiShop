@@ -25,7 +25,7 @@ use yii\helpers\Html;
   								<?=$good['price']?>$
   						</div>
   						<div class="product-button">
-  							  <p><a class="btn btn-md btn-success" href="#">заказать</a></p>
+  							  <p><a data-id=<?=$good['id']?> class="btn btn-md btn-success product-button_add" href="#">заказать</a></p>
   							 <p><a class="btn btn-md btn-primary" href="<?=Url::to(['good/index/','id'=>$good['id']])?>">подробнее</a></p>
   						</div>
             </div>
