@@ -3,7 +3,6 @@ body {
     height: 100%;
 }
 
-
 .wrap {
     min-height: 100%;
     height: auto;
@@ -152,12 +151,14 @@ a.desc:after {
 }
 
 .product{
-
   margin:  auto;
   /* border: 1px solid black; */
   max-width: 300px ;
   text-align: center;
+}
 
+.cartA{
+  cursor: pointer;
 }
 
 .product-img{

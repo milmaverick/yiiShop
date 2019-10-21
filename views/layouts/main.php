@@ -47,7 +47,11 @@ AppAsset::register($this);
           Html::endForm()
           . '</li>',
             ['label' => 'Home', 'url' => ['/']],
-            '<li><a onclick="openCart(event)">Cart</a></li>',
+            '<li><a class = "cartA" onclick="openCart(event)">Cart
+              <span class= "menu-quantity">('.
+
+               $_SESSION['cart.totalQuantity'] .') </span>
+            </a></li>',
             Yii::$app->user->isGuest ? (
                 ['label' => 'Login', 'url' => ['/site/login']]
             ) : (
@@ -87,18 +91,30 @@ AppAsset::register($this);
   <div class="modal-dialog" role="document">
     <div class="modal-content">
       <div class="modal-header">
-        <h5 class="modal-title">Modal title</h5>
+        <h5 class="modal-title">Cart</h5>
         <button type="button" class="close" data-dismiss="modal" aria-label="Close">
           <span aria-hidden="true">&times;</span>
         </button>
       </div>
       <div class="modal-body">
-        
       </div>
-      <div class="modal-footer">
-        <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
-        <button type="button" class="btn btn-primary">Save changes</button>
+    </div>
+  </div>
+</div>
+
+<div class="modal" id="order"  tabindex="-1" role="dialog">
+  <div class="modal-dialog" role="document">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title">Order</h5>
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
       </div>
+      <div class="modal-body">
+
+      </div>
+      
     </div>
   </div>
 </div>
